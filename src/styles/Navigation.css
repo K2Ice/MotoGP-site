@@ -1,0 +1,42 @@
+nav ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+nav ul li a {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-left: 2px solid white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav ul li a.active {
+  background-color: rgba(252, 248, 0, 0.671);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+
+nav ul li:nth-child(1) a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: rgba(205, 33, 34, 0.7);
+}

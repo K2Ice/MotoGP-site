@@ -1,0 +1,30 @@
+.rider {
+  position: relative;
+  height: 200px;
+  width: 65%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 30px;
+  padding-left: 5%;
+  background-color: whitesmoke;
+  border: 2px solid red;
+}
+
+.rider h1 {
+  font-size: 40px;
+}
+.rider p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.riderPhoto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+}

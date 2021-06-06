@@ -1,17 +1,204 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import "./styles/index.css"
+import App from "./components/App"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const data = {
+  riders: [
+    {
+      id: 0,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Petronas Yamaha SRT",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 1,
+      name: "Franco Morbidelli",
+      number: 21,
+      team: "Petronas Yamaha SRT",
+      pic: "./pic/riders/franco_morbidelli.jpg",
+    },
+    {
+      id: 2,
+      name: "Lorenzo Savadori",
+      number: 32,
+      team: "Aprilia Racing Team Gresini",
+      pic: "./pic/riders/lorenzo_savadori.png",
+    },
+    {
+      id: 3,
+      name: "Aleix Espargaro",
+      number: 41,
+      team: "Aprilia Racing Team Gresini",
+      pic: "./pic/riders/aleix_espargaro.png",
+    },
+    {
+      id: 4,
+      name: "Jack Miller",
+      number: 43,
+      team: "Ducati Lenovo Team",
+      pic: "./pic/riders/jack_miller.jpeg",
+    },
+    {
+      id: 5,
+      name: "Francesco Bagnaia",
+      number: 63,
+      team: "Ducati Lenovo Team",
+      pic: "./pic/riders/francesco_bagnaia.png",
+    },
+    {
+      id: 6,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 7,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 8,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 9,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 10,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 11,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 12,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 13,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 14,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 15,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 16,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 17,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 18,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 19,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 20,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 21,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 22,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+    {
+      id: 23,
+      name: "Valentino Rossi",
+      number: 46,
+      team: "Inny",
+      pic: "./pic/riders/valentino_rossi.jpg",
+    },
+  ],
+  races: [
+    { race: "GP Kataru", track: "Losail" },
+    { race: "GP Dauhy (Katar)", track: "Losail" },
+    { race: "GP Portugalii", track: "Portimao" },
+    { race: "GP Hiszpanii", track: "Jerez de la Frontera" },
+    { race: "GP Francji", track: "Le Mans" },
+    { race: "GP Włoch", track: "Mugello" },
+    {
+      race: "GP Katalonii (Hiszpania)",
+      track: "Circuit de Barcelona-Catalunya",
+    },
+    { race: "GP Niemiec", track: "Sachsenring" },
+    { race: "Assen TT (Holandia)", track: "Assen" },
+    { race: "GP Finlandii", track: "Kymi Ring" },
+    { race: "GP Austrii", track: "Red Bull Ring" },
+    { race: "GP Wielkiej Brytanii", track: "Silverstone" },
+    { race: "GP Aragonii (Hiszpania)", track: "Motorland Aragon" },
+    { race: "GP San Marino", track: "Misano" },
+    { race: "GP Japonii", track: "Motegi" },
+    { race: "GP Tajlandii", track: "Buriram" },
+    { race: "Assen TT (Holandia)", track: "Assen" },
+    { race: "GP Australii", track: "Philip Island" },
+    { race: "GP Walencji (Hiszpania)", track: "Walencia" },
+    { race: "Assen TT (Holandia)", track: "Assen" },
+  ],
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App data={data} />, document.getElementById("root"))

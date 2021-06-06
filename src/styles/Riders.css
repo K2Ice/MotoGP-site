@@ -1,0 +1,25 @@
+.teamSelect {
+  background-color: whitesmoke;
+  padding: 20px 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.teamSelect label {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.teamSelect select {
+  box-sizing: border-box;
+  height: 40px;
+  outline: 2px solid transparent;
+  transition: 0.3s;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.teamSelect select:focus-visible {
+  outline: 2px solid red;
+}
