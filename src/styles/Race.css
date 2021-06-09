@@ -10,6 +10,7 @@
 }
 
 .races .header {
+  color: black;
   display: flex;
   text-align: center;
   font-weight: 700;
@@ -24,6 +25,7 @@
 }
 
 .races div {
+  color: #fff;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -33,7 +35,8 @@
 
 .race {
   width: 100%;
-  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
 }
 
 .race p {

@@ -11,7 +11,7 @@ const Rider = ({ rider }) => {
         <img
           src={`./pic/riders/${rider.name
             .toLowerCase()
-            .replace(/\s/g, "")}.jpg`}
+            .replace(/\s/g, "")}.png`}
           alt={rider.name}
         />
       </div>
