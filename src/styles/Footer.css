@@ -3,4 +3,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 0, 0, 0.271);
+  margin-top: 20px;
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
 }

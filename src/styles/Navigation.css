@@ -29,7 +29,6 @@ nav ul li a {
 
 nav ul li a.active {
   background-color: rgba(252, 248, 0, 0.671);
-  color: rgba(0, 0, 0, 1);
   font-weight: 700;
 }
 
