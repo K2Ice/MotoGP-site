@@ -1,0 +1,17 @@
+.ranking {
+  margin: 20px auto;
+  width: 70%;
+}
+.upBar span.name {
+  margin-right: 20px;
+}
+.ranking ul {
+  list-style-type: none;
+}
+.ranking li {
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+.ranking .points {
+  margin-left: 10px;
+}

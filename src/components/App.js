@@ -1,10 +1,11 @@
 import React from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import $ from 'jquery'
+import $ from "jquery"
 
 import Footer from "./Footer"
 import Header from "./Header"
 import Races from "./Races"
+import Ranking from "./Ranking"
 import Riders from "./Riders"
 import Navigation from "./Navigation"
 
@@ -20,11 +21,13 @@ class App extends React.Component {
     const header = $(".headPic")
     const nav = $(".mainNav")
     let headerScrolled = true
-    
+
     $(document).on("scroll", function () {
       const skroll = $(document).scrollTop()
-      let activeElement = Array.from($(".mainNav a")).filter(element=>$(element).hasClass('active'))
-    
+      let activeElement = Array.from($(".mainNav a")).filter((element) =>
+        $(element).hasClass("active")
+      )
+
       if (skroll >= header.height() && headerScrolled) {
         nav.css({
           position: "fixed",
@@ -36,32 +39,34 @@ class App extends React.Component {
           border: "1px solid black",
           overflow: "hidden",
         })
-       
-        $(".mainNav a").css({ padding: "10px 20px",backgroundColor: "rgba(0, 0, 0, 1)", })
 
-        $(activeElement).css({backgroundColor: 'rgba(252, 248, 0, 0.671)',
-        fontWeight: 700,})
+        $(".mainNav a").css({ padding: "10px 20px" })
+
+        // $(activeElement).css({
+        //   backgroundColor: "rgba(252, 248, 0, 0.671)",
+        //   fontWeight: 700,
+        // })
         headerScrolled = !headerScrolled
       } else if (skroll <= header.height() && !headerScrolled) {
         nav.css({
           position: "static",
           top: "auto",
           left: "auto",
-          transform: "none", 
+          transform: "none",
           border: "1px solid black",
           borderRadius: "0px",
         })
-          $(".mainNav a").css({
+        $(".mainNav a").css({
           padding: "20px 30px",
-          backgroundColor: "rgba(0, 0, 0, 1)",
+          // backgroundColor: "rgba(0, 0, 0, 1)",
         })
         headerScrolled = !headerScrolled
-        $(activeElement).css({backgroundColor: 'rgba(252, 248, 0, 0.671)',
-        fontWeight: 700,})
+        // $(activeElement).css({
+        //   backgroundColor: "rgba(252, 248, 0, 0.671)",
+        //   fontWeight: 700,
+        // })
       }
-      
     })
-    
   }
 
   handleTeamChoice = (e) => {
@@ -91,6 +96,10 @@ class App extends React.Component {
             <Route
               path="/races"
               render={() => <Races data={this.props.data} />}
+            />
+            <Route
+              path="/rank"
+              render={() => <Ranking data={this.props.data} />}
             />
           </main>
         </div>
