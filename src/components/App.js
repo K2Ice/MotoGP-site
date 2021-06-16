@@ -10,7 +10,6 @@ import Riders from "./Riders"
 import Navigation from "./Navigation"
 
 import "../styles/App.css"
-import { element } from "prop-types"
 
 class App extends React.Component {
   state = {
@@ -24,10 +23,6 @@ class App extends React.Component {
 
     $(document).on("scroll", function () {
       const skroll = $(document).scrollTop()
-      let activeElement = Array.from($(".mainNav a")).filter((element) =>
-        $(element).hasClass("active")
-      )
-
       if (skroll >= header.height() && headerScrolled) {
         nav.css({
           position: "fixed",
@@ -42,10 +37,6 @@ class App extends React.Component {
 
         $(".mainNav a").css({ padding: "10px 20px" })
 
-        // $(activeElement).css({
-        //   backgroundColor: "rgba(252, 248, 0, 0.671)",
-        //   fontWeight: 700,
-        // })
         headerScrolled = !headerScrolled
       } else if (skroll <= header.height() && !headerScrolled) {
         nav.css({
@@ -58,13 +49,13 @@ class App extends React.Component {
         })
         $(".mainNav a").css({
           padding: "20px 30px",
-          // backgroundColor: "rgba(0, 0, 0, 1)",
         })
         headerScrolled = !headerScrolled
-        // $(activeElement).css({
-        //   backgroundColor: "rgba(252, 248, 0, 0.671)",
-        //   fontWeight: 700,
-        // })
+      }
+    })
+    $(".mainNav a").on("click", () => {
+      if ($("main").offset().top + 50 < $(document).scrollTop()) {
+        $(document).scrollTop(0)
       }
     })
   }
@@ -108,5 +99,4 @@ class App extends React.Component {
     )
   }
 }
-
 export default App
