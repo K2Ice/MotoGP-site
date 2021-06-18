@@ -69,7 +69,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="wrapper">
           <Route path="/" component={Header} />
           <Route path="/" render={Navigation} />
