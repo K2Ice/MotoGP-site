@@ -25,6 +25,61 @@
   right: -130px;
 }
 
-img {
+img.riderImage {
   width: 500px;
+}
+
+@media (max-width: 768px) {
+  .riderPhoto {
+    top: 25px;
+  }
+  img.riderImage {
+    width: 450px;
+  }
+  .rider h1 {
+    font-size: 35px;
+  }
+  .rider p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 680px) {
+  .rider h1 {
+    font-size: 35px;
+    width: 50%;
+  }
+  .rider p {
+    font-size: 17px;
+    max-width: 50%;
+  }
+  .riderPhoto {
+    right: -113px;
+  }
+}
+@media (max-width: 500px) {
+  .rider h1 {
+    font-size: 25px;
+    width: 40%;
+  }
+  .rider p {
+    font-size: 15px;
+    max-width: 40%;
+  }
+}
+@media (max-width: 430px) {
+  .riderPhoto {
+    right: -100px;
+  }
+  .rider h1 {
+    font-size: 22px;
+    width: 40%;
+  }
+  .rider p {
+    font-size: 12px;
+    max-width: 40%;
+  }
+  img.riderImage {
+    width: 340px;
+  }
 }

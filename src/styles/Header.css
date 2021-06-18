@@ -11,7 +11,8 @@ header.headPic {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -70%) scale(3);
+  transform: translate(-50%, -60%);
+  width: 100%;
 }
 
 /* header.headPic img { min-width: 100%; min-height: 100%; */ /* width: 100%; */ /* height: 100vh; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -60%) ; transform: translate(-50%, -60%) ; */ /* } */
@@ -71,4 +72,44 @@ header.headPic h1::after {
   100% {
     left: 60%;
   }
+}
+
+@media (max-width: 768px) {
+  .headPic img {
+    transform: translate(-50%, -60%);
+  }
+
+  header.headPic h1 {
+    font-size: 50px;
+  }
+
+  header.headPic h1::after {
+    bottom: 0;
+    left: -50px;
+    top: 0;
+    border-top: 67px solid transparent;
+    border-right: 50px solid rgba(205, 33, 34, 0.7);
+  }
+}
+
+@media (max-width: 680px) {
+  .headPic img {
+    transform: translate(-50%, -60%);
+  }
+
+  header.headPic h1 {
+    font-size: 45px;
+  }
+
+  header.headPic h1::after {
+    bottom: 0;
+    left: -50px;
+    top: 0;
+    border-top: 60px solid transparent;
+    border-right: 50px solid rgba(205, 33, 34, 0.7);
+  }
+}
+@media (max-width: 500px) {
+}
+@media (max-width: 430px) {
 }

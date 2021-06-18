@@ -9,6 +9,7 @@ const Rider = ({ rider }) => {
       <p>{rider.team}</p>
       <div className="riderPhoto">
         <img
+          className="riderImage"
           src={`./pic/riders/${rider.name
             .toLowerCase()
             .replace(/\s/g, "")
