@@ -6,6 +6,7 @@
 html {
   font-family: "Ubuntu";
   color: white;
+  --mainBackgroundColor: rgba(205, 33, 34, 0.7);
 }
 
 body {

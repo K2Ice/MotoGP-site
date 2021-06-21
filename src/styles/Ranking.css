@@ -3,21 +3,26 @@
   width: 70%;
 }
 .upBar,
-.ranking li {
+.ranking ul li {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-.upBar span,
-.ranking li span {
-  display: block;
-  flex-basis: 20%;
+.upBar {
+  border-bottom: 1px solid var(--mainBackgroundColor);
+  padding-bottom: 10px;
 }
+.upBar span,
+.ranking ul li span {
+  flex-basis: 25%;
+}
+
 .ranking ul {
   list-style-type: none;
 }
 .ranking li {
   border-bottom: 1px solid white;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

@@ -2,20 +2,16 @@ header.headPic {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  /* background-position: center -300px;
-  background-size: cover;
-  background-repeat: no-repeat;*/
 }
 
 .headPic img {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -60%);
   width: 100%;
 }
 
-/* header.headPic img { min-width: 100%; min-height: 100%; */ /* width: 100%; */ /* height: 100vh; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -60%) ; transform: translate(-50%, -60%) ; */ /* } */
 header.headPic div.layer {
   position: absolute;
   top: 0;
@@ -34,7 +30,7 @@ header.headPic h1 {
   min-width: 400px;
   right: 0;
   letter-spacing: 4px;
-  background-color: rgba(205, 33, 34, 0.7);
+  background-color: var(--mainBackgroundColor);
   font-size: 60px;
   -webkit-animation: logoSlide 0.5s 1s 1 cubic-bezier(0.22, 2.14, 1, 1) both;
   animation: logoSlide 0.5s 1s 1 cubic-bezier(0.22, 2.14, 1, 1) both;
@@ -47,7 +43,7 @@ header.headPic h1::after {
   left: -50px;
   top: 0;
   border-top: 80px solid transparent;
-  border-right: 50px solid rgba(205, 33, 34, 0.7);
+  border-right: 50px solid var(--mainBackgroundColor);
 }
 
 @-webkit-keyframes logoSlide {
@@ -85,10 +81,8 @@ header.headPic h1::after {
 
   header.headPic h1::after {
     bottom: 0;
-    left: -50px;
     top: 0;
     border-top: 67px solid transparent;
-    border-right: 50px solid rgba(205, 33, 34, 0.7);
   }
 }
 
@@ -103,13 +97,14 @@ header.headPic h1::after {
 
   header.headPic h1::after {
     bottom: 0;
-    left: -50px;
     top: 0;
     border-top: 60px solid transparent;
-    border-right: 50px solid rgba(205, 33, 34, 0.7);
   }
 }
 @media (max-width: 500px) {
 }
 @media (max-width: 430px) {
+  header.headPic {
+    height: 45vh;
+  }
 }
