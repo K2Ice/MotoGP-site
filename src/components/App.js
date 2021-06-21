@@ -48,9 +48,15 @@ class App extends React.Component {
           border: "1px solid black",
           borderRadius: "0px",
         })
-        $(".mainNav a").css({
-          padding: "20px 30px",
-        })
+        if ($(document).width() > 430) {
+          $(".mainNav a").css({
+            padding: "20px 30px",
+          })
+        } else {
+          $(".mainNav a").css({
+            padding: "10",
+          })
+        }
         headerScrolled = !headerScrolled
       }
     })
