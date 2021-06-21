@@ -1,18 +1,14 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Rider from "./Rider"
 
 import "../styles/Riders.css"
 
 const Riders = (props) => {
-  const { chosenTeam, data } = props
+  const { changeState, chosenTeam, data } = props
 
   let riderList = data.riders.filter((rider) => {
-    if (chosenTeam === "all") {
-      return rider
-    }
-    if (chosenTeam === rider.team) {
-      return rider
-    }
+    if (chosenTeam === "all") return rider
+    if (chosenTeam === rider.team) return rider
   })
 
   riderList = riderList.map((rider) => <Rider key={rider.id} rider={rider} />)
@@ -29,6 +25,13 @@ const Riders = (props) => {
       )
     }
   })
+
+  useEffect(() => {
+    changeState(true)
+    return () => {
+      changeState(false)
+    }
+  }, [])
   return (
     <>
       <div className="teamSelect">
