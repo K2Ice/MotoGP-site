@@ -2,24 +2,23 @@ import React from "react"
 
 import "../styles/Ranking.css"
 const Ranking = ({ data }) => {
-  const rankingList = data.riders.map((rider) => (
-    <li key={`rd${rider.id}`} points={rider.points}>
-      <span className="position"></span>
+  let rankingList = data.riders.sort((a, b) => {
+    const firstRider = a.points
+    const secondRider = b.points
+    if (firstRider - secondRider > 0) return -1
+    if (firstRider - secondRider < 0) return 1
+  })
+
+  rankingList = rankingList.map((rider, index) => (
+    <li key={`rd${rider.id}`}>
+      <span className="position">{++index}</span>
       <span>{rider.name}</span>
       <span>{rider.motocycle}</span>
       <span>{rider.nationality}</span>
       <span className="points">{rider.points}</span>
     </li>
   ))
-  rankingList.sort((a, b) => {
-    const firstRider = a.props.points
-    const secondRider = b.props.points
-    if (firstRider - secondRider > 0) return -1
-    if (firstRider - secondRider < 0) return 1
-  })
-  // rankingList.forEach((element, index) => {
-  //   element.props.children ++index
-  // })
+
   return (
     <div className="ranking">
       <div className="upBar">
