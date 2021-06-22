@@ -26,3 +26,27 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .upBar span,
+  .ranking ul li span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 680px) {
+  .upBar span,
+  .ranking ul li span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  .upBar span,
+  .ranking ul li span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 430px) {
+  .upBar span,
+  .ranking ul li span {
+    font-size: 11px;
+  }
+}
