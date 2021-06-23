@@ -11,6 +11,8 @@ import Navigation from "./Navigation"
 
 import "../styles/App.css"
 
+import icon from "../pic/motorcycle_icon.png"
+
 class App extends React.Component {
   state = {
     chosenTeam: "all",
@@ -93,6 +95,12 @@ class App extends React.Component {
           <Route path="/" render={Navigation} />
           <main>
             <Switch>
+              <Route
+                path="/"
+                render={() => (
+                  <img className="icon" src={icon} alt="moto_icon" />
+                )}
+              />
               <Route
                 path="/riders"
                 render={() => (

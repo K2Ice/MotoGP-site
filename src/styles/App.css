@@ -22,3 +22,18 @@ main {
   min-height: 100vh;
   border-top: 1px solid white;
 }
+
+.icon {
+  position: absolute;
+  width: 150px;
+  animation: iconSlide 1s 2s linear 1 both;
+}
+
+@keyframes iconSlide {
+  from {
+    left: -150px;
+  }
+  to {
+    left: calc(100% + 150px);
+  }
+}
