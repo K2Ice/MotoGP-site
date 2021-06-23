@@ -25,7 +25,6 @@ const Riders = (props) => {
       )
     }
   })
-
   useEffect(() => {
     changeState(true)
     return () => {
