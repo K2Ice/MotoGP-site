@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MotoGP-site/static/css/main.b8d925ac.chunk.css",
-    "main.js": "/MotoGP-site/static/js/main.8449c1cc.chunk.js",
-    "main.js.map": "/MotoGP-site/static/js/main.8449c1cc.chunk.js.map",
+    "main.css": "/MotoGP-site/static/css/main.077db9e8.chunk.css",
+    "main.js": "/MotoGP-site/static/js/main.6b873c4b.chunk.js",
+    "main.js.map": "/MotoGP-site/static/js/main.6b873c4b.chunk.js.map",
     "runtime-main.js": "/MotoGP-site/static/js/runtime-main.73b480d6.js",
     "runtime-main.js.map": "/MotoGP-site/static/js/runtime-main.73b480d6.js.map",
     "static/js/2.f612543f.chunk.js": "/MotoGP-site/static/js/2.f612543f.chunk.js",
     "static/js/2.f612543f.chunk.js.map": "/MotoGP-site/static/js/2.f612543f.chunk.js.map",
     "index.html": "/MotoGP-site/index.html",
-    "static/css/main.b8d925ac.chunk.css.map": "/MotoGP-site/static/css/main.b8d925ac.chunk.css.map",
+    "static/css/main.077db9e8.chunk.css.map": "/MotoGP-site/static/css/main.077db9e8.chunk.css.map",
     "static/js/2.f612543f.chunk.js.LICENSE.txt": "/MotoGP-site/static/js/2.f612543f.chunk.js.LICENSE.txt",
     "static/media/motogp_riders.c7401672.jpg": "/MotoGP-site/static/media/motogp_riders.c7401672.jpg",
     "static/media/motogp_riders1.2e89f922.jpg": "/MotoGP-site/static/media/motogp_riders1.2e89f922.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.73b480d6.js",
     "static/js/2.f612543f.chunk.js",
-    "static/css/main.b8d925ac.chunk.css",
-    "static/js/main.8449c1cc.chunk.js"
+    "static/css/main.077db9e8.chunk.css",
+    "static/js/main.6b873c4b.chunk.js"
   ]
 }
