@@ -4,10 +4,11 @@ import $ from "jquery"
 
 import Footer from "./Footer"
 import Header from "./Header"
+import Navigation from "./Navigation"
 import Races from "./Races"
 import Ranking from "./Ranking"
 import Riders from "./Riders"
-import Navigation from "./Navigation"
+import Teams from "./Teams"
 
 import "../styles/App.css"
 
@@ -47,7 +48,7 @@ class App extends React.Component {
           top: "auto",
           left: "auto",
           transform: "none",
-          border: "1px solid black",
+          border: "none",
           borderRadius: "0px",
         })
         if ($(document).width() > 430) {
@@ -114,6 +115,10 @@ class App extends React.Component {
                 )}
               />
               <Route
+                path="/teams"
+                render={() => <Teams data={this.props.data} />}
+              />
+              <Route
                 path="/races"
                 render={() => <Races data={this.props.data} />}
               />
@@ -130,8 +135,8 @@ class App extends React.Component {
               />
             </Switch>
           </main>
+          <Footer />
         </div>
-        <Footer />
       </Router>
     )
   }

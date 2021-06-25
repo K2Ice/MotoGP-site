@@ -11,13 +11,13 @@ let bannerNumer = 0
 const bannerImages = [motogp, motogp1, motogp2]
 
 const Header = (props) => {
-  const banner = () => {
+  const bannerAnimation = () => {
     document.querySelector(".headPic img").src = bannerImages[bannerNumer]
     bannerNumer++
     if (bannerNumer > bannerImages.length - 1) bannerNumer = 0
   }
   useEffect(() => {
-    const indexBannerInterval = setInterval(banner, 5000)
+    const indexBannerInterval = setInterval(bannerAnimation, 5000)
     return () => clearInterval(indexBannerInterval)
   }, [])
 
