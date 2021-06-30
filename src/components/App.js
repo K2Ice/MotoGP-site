@@ -11,14 +11,14 @@ import Riders from "./Riders"
 import Teams from "./Teams"
 
 import "../styles/App.css"
-
-import icon from "../pic/motorcycle_icon.png"
+import WelcomePage from "./WelcomePage"
 
 class App extends React.Component {
   state = {
     chosenTeam: "all",
     mainStyle: false,
     ridersMounted: true,
+    animationDone: false,
   }
   componentDidMount() {
     const header = $(".headPic")
@@ -88,6 +88,11 @@ class App extends React.Component {
       })
     }
   }
+
+  handleAnimations = () => {
+    this.setState({ animationDone: true })
+  }
+
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL}>
@@ -100,7 +105,10 @@ class App extends React.Component {
                 path="/"
                 exact
                 render={() => (
-                  <img className="icon" src={icon} alt="moto_icon" />
+                  <WelcomePage
+                    changeAnimateState={this.handleAnimations}
+                    animatedElements={this.state.animationDone}
+                  />
                 )}
               />
               <Route
