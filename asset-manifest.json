@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/MotoGP-site/static/css/main.719ce6e0.chunk.css",
-    "main.js": "/MotoGP-site/static/js/main.e21a281f.chunk.js",
-    "main.js.map": "/MotoGP-site/static/js/main.e21a281f.chunk.js.map",
+    "main.css": "/MotoGP-site/static/css/main.57a1c538.chunk.css",
+    "main.js": "/MotoGP-site/static/js/main.0b7e58a8.chunk.js",
+    "main.js.map": "/MotoGP-site/static/js/main.0b7e58a8.chunk.js.map",
     "runtime-main.js": "/MotoGP-site/static/js/runtime-main.73b480d6.js",
     "runtime-main.js.map": "/MotoGP-site/static/js/runtime-main.73b480d6.js.map",
-    "static/js/2.f612543f.chunk.js": "/MotoGP-site/static/js/2.f612543f.chunk.js",
-    "static/js/2.f612543f.chunk.js.map": "/MotoGP-site/static/js/2.f612543f.chunk.js.map",
+    "static/js/2.d6c5f096.chunk.js": "/MotoGP-site/static/js/2.d6c5f096.chunk.js",
+    "static/js/2.d6c5f096.chunk.js.map": "/MotoGP-site/static/js/2.d6c5f096.chunk.js.map",
     "index.html": "/MotoGP-site/index.html",
-    "static/css/main.719ce6e0.chunk.css.map": "/MotoGP-site/static/css/main.719ce6e0.chunk.css.map",
-    "static/js/2.f612543f.chunk.js.LICENSE.txt": "/MotoGP-site/static/js/2.f612543f.chunk.js.LICENSE.txt",
-    "static/media/motogp_riders.c7401672.jpg": "/MotoGP-site/static/media/motogp_riders.c7401672.jpg",
-    "static/media/motogp_riders1.2e89f922.jpg": "/MotoGP-site/static/media/motogp_riders1.2e89f922.jpg",
+    "static/css/main.57a1c538.chunk.css.map": "/MotoGP-site/static/css/main.57a1c538.chunk.css.map",
+    "static/js/2.d6c5f096.chunk.js.LICENSE.txt": "/MotoGP-site/static/js/2.d6c5f096.chunk.js.LICENSE.txt",
+    "static/media/motogp_riders.a8e2d56b.png": "/MotoGP-site/static/media/motogp_riders.a8e2d56b.png",
+    "static/media/motogp_riders1.fc2ab104.png": "/MotoGP-site/static/media/motogp_riders1.fc2ab104.png",
     "static/media/motogp_riders2.012fe5f7.jpg": "/MotoGP-site/static/media/motogp_riders2.012fe5f7.jpg",
     "static/media/motorcycle_icon.584e5ebf.png": "/MotoGP-site/static/media/motorcycle_icon.584e5ebf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.73b480d6.js",
-    "static/js/2.f612543f.chunk.js",
-    "static/css/main.719ce6e0.chunk.css",
-    "static/js/main.e21a281f.chunk.js"
+    "static/js/2.d6c5f096.chunk.js",
+    "static/css/main.57a1c538.chunk.css",
+    "static/js/main.0b7e58a8.chunk.js"
   ]
 }
