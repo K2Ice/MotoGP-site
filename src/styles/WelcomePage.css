@@ -1,79 +1,80 @@
 .helloText {
   margin: 5% auto;
   text-align: justify;
-  font-size: 20px;
 }
-.helloText h1 {
+.helloText .headText {
   font-size: 40px;
+  font-weight: 700;
   margin: 0 auto;
   width: 85%;
   max-height: 53px;
   text-align: center;
   margin-bottom: 2%;
   color: white;
-  animation: textSlide 2s 2.2s 1 linear both;
+  animation: textSlide 1s 2.2s 1 linear both;
   border-bottom: 1px solid red;
   padding-bottom: 2%;
 }
-.helloText h1 span {
-  animation: zoom 2s 4.2s 1 linear both;
+.helloText .headText span {
+  /* animation: zoom 2s 4.2s 1 linear both; */
 }
 .helloText p {
+  font-size: 20px;
   margin: 0 auto;
   width: 80%;
-  animation: textSlide 2s 2.2s 1 linear both;
+  animation: textSlide 1s 2.2s 1 linear both;
 }
 
 @keyframes textSlide {
   0% {
-    transform: translateX(-150%) scale(1);
+    transform: translateX(-150%);
   }
   50% {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
   70% {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
   75% {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
   80% {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(0) scale(1);
+    transform: translateX(0);
   }
 }
 
 @keyframes zoom {
   0% {
-    font-size: 40px;
+    transform: translateX(0) scale(1);
   }
   50% {
-    font-size: 40px;
+    transform: translateX(0) scale(1);
   }
   55% {
-    font-size: 48px;
+    transform: translateX(0) scale(1.2);
   }
   60% {
-    font-size: 40px;
+    transform: translateX(0) scale(1);
   }
   100% {
-    font-size: 40px;
+    transform: translateX(0) scale(1);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 }
 @media (max-width: 680px) {
+  .helloText p.headText {
+    font-size: 30px;
+  }
+  .helloText p {
+    font-size: 15px;
+  }
 }
 @media (max-width: 500px) {
-  .helloText > h1 span {
-    font-size: 10px;
-  }
-  .helloText > p {
-    font-size: 20px;
-  }
 }
 @media (max-width: 430px) {
 }

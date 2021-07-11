@@ -1,9 +1,11 @@
 .teamSelect {
-  background-color: rgba(255, 0, 0, 0.271);
-  padding: 20px 30px;
+  /* background-color: rgb(39, 28, 28); */
+  padding: 5px 0;
+  background-color: rgb(124, 7, 7);
   text-align: center;
   color: white;
-  margin: 0 auto;
+  margin: 10px auto 0;
+  text-transform: uppercase;
 }
 
 .teamSelect label {

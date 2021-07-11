@@ -1,12 +1,19 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 import "../styles/Rider.css"
 
 const Rider = ({ rider }) => {
   return (
     <div className="rider">
-      <h1>{rider.name}</h1>
-      <p>{rider.team}</p>
+      <div className="riderDescription">
+        <Link to={`/rider/${rider.name}`}>
+          <h1>{rider.name}</h1>
+        </Link>
+        <Link to={`/team/${rider.team}`}>
+          <p>{rider.team}</p>
+        </Link>
+      </div>
       <div className="riderPhoto">
         <img
           className="riderImage"

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #171c21;
   /* background-image: linear-gradient(45deg, black 20%, rgb(34, 31, 31)); */
 }
 
@@ -20,14 +20,14 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   border-top: 1px solid white;
 }
 
 .icon {
   position: absolute;
   width: 150px;
-  animation: iconSlide 1s 2s linear 1 both;
+  animation: iconSlide 0.5s 2s linear 1 both;
 }
 
 @keyframes iconSlide {

@@ -1,7 +1,7 @@
 .races {
   box-sizing: border-box;
   display: flex;
-  width: 55%;
+  width: 80%;
   margin: 20px auto;
   flex-wrap: wrap;
   background-color: black;
@@ -18,7 +18,7 @@
   border: 2px solid black;
   padding: 20px;
   justify-content: center;
-  flex-basis: 80%;
+  flex-basis: 100%;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }

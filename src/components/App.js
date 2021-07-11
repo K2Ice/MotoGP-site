@@ -8,6 +8,7 @@ import Navigation from "./Navigation"
 import Races from "./Races"
 import Ranking from "./Ranking"
 import Riders from "./Riders"
+import RiderInfo from "./RiderInfo"
 import Teams from "./Teams"
 
 import "../styles/App.css"
@@ -104,8 +105,9 @@ class App extends React.Component {
               <Route
                 path="/"
                 exact
-                render={() => (
+                render={(props) => (
                   <WelcomePage
+                    {...props}
                     changeAnimateState={this.handleAnimations}
                     animatedElements={this.state.animationDone}
                   />
@@ -113,8 +115,9 @@ class App extends React.Component {
               />
               <Route
                 path="/riders"
-                render={() => (
+                render={(props) => (
                   <Riders
+                    {...props}
                     changeState={this.handleRidersState}
                     change={this.handleTeamChoice}
                     chosenTeam={this.state.chosenTeam}
@@ -123,20 +126,28 @@ class App extends React.Component {
                 )}
               />
               <Route
+                path="/rider/:name"
+                render={(props) => (
+                  <RiderInfo {...props} data={this.props.data} />
+                )}
+              />
+              <Route
                 path="/teams"
-                render={() => <Teams data={this.props.data} />}
+                render={(props) => <Teams {...props} data={this.props.data} />}
               />
               <Route
                 path="/races"
-                render={() => <Races data={this.props.data} />}
+                render={(props) => <Races {...props} data={this.props.data} />}
               />
               <Route
                 path="/rank"
-                render={() => <Ranking data={this.props.data} />}
+                render={(props) => (
+                  <Ranking {...props} data={this.props.data} />
+                )}
               />
               <Route
-                render={() => (
-                  <h1 style={{ textAlign: "center", marginTop: 40 }}>
+                render={(props) => (
+                  <h1 {...props} style={{ textAlign: "center", marginTop: 40 }}>
                     Nie znaleziono strony o podanym adresie
                   </h1>
                 )}

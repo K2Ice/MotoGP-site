@@ -1,6 +1,8 @@
 .ranking {
   margin: 20px auto;
   width: 70%;
+  background-color: black;
+  padding: 20px 0;
 }
 .upBar,
 .ranking ul li {
@@ -26,7 +28,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .upBar span,
   .ranking ul li span {
     font-size: 14px;
@@ -47,6 +49,6 @@
 @media (max-width: 430px) {
   .upBar span,
   .ranking ul li span {
-    font-size: 11px;
+    font-size: 10px;
   }
 }

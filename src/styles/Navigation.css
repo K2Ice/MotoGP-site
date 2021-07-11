@@ -10,7 +10,7 @@ nav ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #0d0e1a;
 }
 
 nav ul li a {
@@ -28,7 +28,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  background-color: rgba(252, 248, 0, 0.671);
+  background-color: rgba(205, 33, 34, 0.7);
   font-weight: 700;
 }
 
@@ -40,7 +40,7 @@ nav ul li a:hover {
   background-color: rgba(205, 33, 34, 0.7);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 }
 @media (max-width: 680px) {
   nav ul {

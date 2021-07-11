@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 
 import "../styles/Header.css"
 
-import motogp from "../pic/motogp_riders.jpg"
-import motogp1 from "../pic/motogp_riders1.jpg"
+import motogp from "../pic/motogp_riders.png"
+import motogp1 from "../pic/motogp_riders1.png"
 import motogp2 from "../pic/motogp_riders2.jpg"
 
 let bannerNumer = 0

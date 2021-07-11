@@ -8,7 +8,7 @@
   padding-left: 5%;
   color: rgb(241, 214, 214);
   background-color: whitesmoke;
-  background-image: linear-gradient(237deg, black 40%, red);
+  background-image: linear-gradient(237deg, black 40%, rgb(124, 7, 7));
 }
 
 .rider h1 {
@@ -29,7 +29,32 @@ img.riderImage {
   width: 500px;
 }
 
-@media (max-width: 768px) {
+.riderDescription {
+  position: relative;
+}
+
+.rider a {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+  transform: translateX(0);
+}
+
+.rider a:first-child {
+  top: 0;
+  left: 0;
+}
+.rider a:last-child {
+  top: 50px;
+  left: 0;
+}
+.rider a:hover {
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+@media (max-width: 780px) {
   .riderPhoto {
     top: 25px;
   }
@@ -51,10 +76,14 @@ img.riderImage {
   }
   .rider p {
     font-size: 17px;
-    max-width: 50%;
+    max-width: 90%;
   }
   .riderPhoto {
     right: -113px;
+  }
+  .rider a:last-child {
+    top: 92px;
+    left: 0;
   }
 }
 @media (max-width: 500px) {
@@ -64,7 +93,13 @@ img.riderImage {
   }
   .rider p {
     font-size: 15px;
-    max-width: 40%;
+  }
+  img.riderImage {
+    width: 400px;
+  }
+  .rider a:last-child {
+    top: 68px;
+    left: 0;
   }
 }
 @media (max-width: 430px) {
@@ -77,9 +112,12 @@ img.riderImage {
   }
   .rider p {
     font-size: 12px;
-    max-width: 40%;
   }
   img.riderImage {
     width: 340px;
+  }
+  .rider a:last-child {
+    top: 60px;
+    left: 0;
   }
 }
