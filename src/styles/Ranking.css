@@ -2,7 +2,7 @@
   margin: 20px auto;
   width: 70%;
   background-color: black;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 .upBar,
 .ranking ul li {
@@ -27,6 +27,10 @@
   border-bottom: 1px solid white;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.ranking li:last-child {
+  border-color: var(--mainBackgroundColor);
 }
 @media (max-width: 780px) {
   .upBar span,

@@ -15,9 +15,7 @@
   border-bottom: 1px solid red;
   padding-bottom: 2%;
 }
-.helloText .headText span {
-  /* animation: zoom 2s 4.2s 1 linear both; */
-}
+
 .helloText p {
   font-size: 20px;
   margin: 0 auto;
@@ -77,4 +75,7 @@
 @media (max-width: 500px) {
 }
 @media (max-width: 430px) {
+  .helloText p.headText {
+    padding-bottom: 35px;
+  }
 }

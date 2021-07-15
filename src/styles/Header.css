@@ -35,8 +35,9 @@ header.headPic h1 {
   letter-spacing: 4px;
   background-color: var(--mainBackgroundColor);
   font-size: 60px;
-  -webkit-animation: logoSlide 0.5s 1s 1 cubic-bezier(0.22, 2.14, 1, 1) both;
-  animation: logoSlide 0.5s 1s 1 cubic-bezier(0.22, 2.14, 1, 1) both;
+  -webkit-animation: logoSlide 0.5s 1s 1 cubic-bezier(0.18, -0.12, 0.1, 1.32)
+    both;
+  animation: logoSlide 0.5s 1s 1 cubic-bezier(0.18, -0.12, 0.1, 1.32) both;
 }
 header.headPic h1::after {
   position: absolute;
@@ -111,13 +112,13 @@ header.headPic h1::after {
 }
 @media (max-width: 459px) {
   header.headPic {
-    height: 45vh;
+    height: 30vh;
   }
   header.headPic h1 {
-    height: 40px;
-    font-size: 30px;
+    height: 35px;
+    font-size: 25px;
   }
   header.headPic h1::after {
-    border-top: 40px solid transparent;
+    border-top: 35px solid transparent;
   }
 }

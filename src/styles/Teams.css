@@ -1,10 +1,31 @@
 .teams {
+  display: flex;
+  flex-direction: column;
   min-height: 80vh;
 }
 
-.teams p {
-  text-align: center;
-  margin: 10px;
+.team-element {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-bottom: 1px solid whitesmoke;
+}
+.team-element:last-child {
+  border: none;
+}
+
+.team-element img {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.team-element p {
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 700;
+  width: 30%;
 }

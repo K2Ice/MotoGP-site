@@ -1,12 +1,14 @@
 .descriptionRider {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 56% 44%;
   grid-template-rows: repeat(3, minmax(50px, auto));
+  align-content: start;
   width: 80%;
   margin: 10px auto;
 }
 
 .descriptionRider h1 {
+  margin-left: 15px;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   font-size: 50px;
@@ -16,10 +18,13 @@
   background-color: rgba(0, 0, 0, 0.68);
 }
 .descriptionRider .riderInfo {
+  margin-left: auto;
+  max-width: 90%;
   grid-column: 1 /2;
   grid-row: 2 /3;
   display: flex;
   flex-direction: column;
+  min-width: 90%;
 }
 .descriptionRider .riderInfo div {
   flex-basis: 40px;
@@ -38,12 +43,101 @@
 }
 
 .descriptionRider img.riderImg {
+  box-sizing: border-box;
+  padding: 15px;
   grid-column: 2 / 3;
   grid-row: 2 / 4;
-  width: 100%;
+  width: 400px;
 }
 .descriptionRider img.moto {
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 15px;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  max-width: 90%;
   width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .descriptionRider img.riderImg {
+    width: 370px;
+  }
+}
+
+@media (max-width: 967px) {
+  .descriptionRider img.riderImg {
+    width: 350px;
+    transform: translateX(-10%);
+  }
+}
+
+@media (max-width: 780px) {
+  .descriptionRider h1 {
+    font-size: 40px;
+  }
+  .descriptionRider .riderInfo div {
+    flex-basis: 35px;
+    font-size: 15px;
+  }
+  .descriptionRider div span {
+    font-size: 20px;
+  }
+  .descriptionRider img.riderImg {
+    width: 310px;
+  }
+}
+
+@media (max-width: 680px) {
+  .descriptionRider img.riderImg {
+    width: 295px;
+    transform: translateX(-20%);
+  }
+}
+@media (max-width: 500px) {
+  .descriptionRider h1 {
+    font-size: 35px;
+  }
+  .descriptionRider .riderInfo div {
+    font-size: 13px;
+  }
+  .descriptionRider div span {
+    font-size: 18px;
+  }
+  .descriptionRider img.riderImg {
+    width: 280px;
+    transform: translateX(-25%);
+  }
+}
+@media (max-width: 430px) {
+  .descriptionRider h1 {
+    font-size: 30px;
+  }
+  .descriptionRider .riderInfo div {
+    flex-basis: 30px;
+    font-size: 10px;
+  }
+  .descriptionRider div span {
+    font-size: 15px;
+  }
+  .descriptionRider img.riderImg {
+    width: 250px;
+    transform: translateX(-25%);
+  }
+}
+@media (max-width: 370px) {
+  .descriptionRider h1 {
+    font-size: 25px;
+  }
+  .descriptionRider .riderInfo div {
+    flex-basis: 20px;
+    font-size: 9px;
+  }
+  .descriptionRider div span {
+    font-size: 12px;
+  }
+  .descriptionRider img.riderImg {
+    width: 220px;
+    transform: translateX(-25%);
+  }
 }
