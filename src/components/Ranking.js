@@ -13,7 +13,7 @@ const Ranking = ({ data }) => {
     <li key={`rd${rider.id}`}>
       <span className="position">{++index}</span>
       <span>{rider.name}</span>
-      <span>{rider.motocycle}</span>
+      <span>{rider.motorcycle}</span>
       <span>{rider.nationality}</span>
       <span className="points">{rider.points}</span>
     </li>

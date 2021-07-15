@@ -54,7 +54,7 @@ class App extends React.Component {
         })
         if ($(document).width() > 430) {
           $(".mainNav a").css({
-            padding: "20px 30px",
+            padding: "20px 20px",
           })
         } else {
           $(".mainNav a").css({
@@ -147,7 +147,14 @@ class App extends React.Component {
               />
               <Route
                 render={(props) => (
-                  <h1 {...props} style={{ textAlign: "center", marginTop: 40 }}>
+                  <h1
+                    {...props}
+                    style={{
+                      textAlign: "center",
+                      marginTop: 40,
+                      marginBottom: 40,
+                    }}
+                  >
                     Nie znaleziono strony o podanym adresie
                   </h1>
                 )}

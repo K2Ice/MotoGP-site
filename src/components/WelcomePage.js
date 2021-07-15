@@ -5,7 +5,6 @@ import "../styles/WelcomePage.css"
 import icon from "../pic/motorcycle_icon.png"
 
 const WelcomePage = ({ animatedElements, changeAnimateState }) => {
-  console.log(animatedElements)
   useEffect(() => {
     setTimeout(() => {
       changeAnimateState()

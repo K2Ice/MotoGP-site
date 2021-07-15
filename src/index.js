@@ -12,7 +12,7 @@ const data = {
       team: "Petronas Yamaha SRT",
       points: 15,
       nationality: "ITA",
-      motocycle: "Yamaha",
+      motorcycle: "Yamaha",
     },
     {
       id: 1,
@@ -21,7 +21,7 @@ const data = {
       team: "Petronas Yamaha SRT",
       points: 40,
       nationality: "ITA",
-      motocycle: "Yamaha",
+      motorcycle: "Yamaha",
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const data = {
       team: "Aprilia Racing Team Gresini",
       points: 4,
       nationality: "ITA",
-      motocycle: "Aprilia",
+      motorcycle: "Aprilia",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ const data = {
       team: "Aprilia Racing Team Gresini",
       points: 44,
       nationality: "SPA",
-      motocycle: "Aprilia",
+      motorcycle: "Aprilia",
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const data = {
       team: "Ducati Lenovo Team",
       points: 90,
       nationality: "AUS",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const data = {
       team: "Ducati Lenovo Team",
       points: 88,
       nationality: "ITA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ const data = {
       team: "LCR Honda",
       points: 31,
       nationality: "JPN",
-      motocycle: "Honda",
+      motorcycle: "Honda",
     },
     {
       id: 7,
@@ -75,7 +75,7 @@ const data = {
       team: "LCR Honda",
       points: 25,
       nationality: "SPA",
-      motocycle: "Honda",
+      motorcycle: "Honda",
     },
     {
       id: 8,
@@ -84,7 +84,7 @@ const data = {
       team: "Monster Energy Yamaha MotoGP",
       points: 75,
       nationality: "SPA",
-      motocycle: "Yamaha",
+      motorcycle: "Yamaha",
     },
     {
       id: 9,
@@ -93,7 +93,7 @@ const data = {
       team: "Monster Energy Yamaha MotoGP",
       points: 115,
       nationality: "FRA",
-      motocycle: "Yamaha",
+      motorcycle: "Yamaha",
     },
     {
       id: 10,
@@ -102,7 +102,7 @@ const data = {
       team: "Pramac Racing",
       points: 101,
       nationality: "FRA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 11,
@@ -111,7 +111,7 @@ const data = {
       team: "Pramac Racing",
       points: 3,
       nationality: "ITA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 12,
@@ -120,7 +120,7 @@ const data = {
       team: "Pramac Racing",
       points: 19,
       nationality: "SPA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 13,
@@ -129,7 +129,7 @@ const data = {
       team: "Red Bull KTM Factory Racing",
       points: 43,
       nationality: "RSA",
-      motocycle: "KTM",
+      motorcycle: "KTM",
     },
     {
       id: 14,
@@ -138,7 +138,7 @@ const data = {
       team: "Red Bull KTM Factory Racing",
       points: 54,
       nationality: "POR",
-      motocycle: "KTM",
+      motorcycle: "KTM",
     },
     {
       id: 15,
@@ -147,7 +147,7 @@ const data = {
       team: "Repsol Honda Team",
       points: 29,
       nationality: "SPA",
-      motocycle: "Honda",
+      motorcycle: "Honda",
     },
     {
       id: 16,
@@ -156,7 +156,7 @@ const data = {
       team: "Repsol Honda Team",
       points: 16,
       nationality: "SPA",
-      motocycle: "Honda",
+      motorcycle: "Honda",
     },
     {
       id: 17,
@@ -165,7 +165,7 @@ const data = {
       team: "Sky VR46 Avintia",
       points: 13,
       nationality: "ITA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 18,
@@ -174,7 +174,7 @@ const data = {
       team: "Sky VR46 Avintia",
       points: 26,
       nationality: "ITA",
-      motocycle: "Ducati",
+      motorcycle: "Ducati",
     },
     {
       id: 19,
@@ -183,7 +183,7 @@ const data = {
       team: "Team SUZUKI ECSTAR",
       points: 78,
       nationality: "SPA",
-      motocycle: "Suzuki",
+      motorcycle: "Suzuki",
     },
     {
       id: 20,
@@ -192,7 +192,7 @@ const data = {
       team: "Team SUZUKI ECSTAR",
       points: 23,
       nationality: "SPA",
-      motocycle: "Suzuki",
+      motorcycle: "Suzuki",
     },
     {
       id: 21,
@@ -201,7 +201,7 @@ const data = {
       team: "Tech 3 KTM Factory Racing",
       points: 23,
       nationality: "ITA",
-      motocycle: "KTM",
+      motorcycle: "KTM",
     },
     {
       id: 22,
@@ -210,7 +210,7 @@ const data = {
       team: "Tech 3 KTM Factory Racing",
       points: 13,
       nationality: "ITA",
-      motocycle: "KTM",
+      motorcycle: "KTM",
     },
   ],
   races: [

@@ -10,9 +10,7 @@ const Rider = ({ rider }) => {
         <Link to={`/rider/${rider.name}`}>
           <h1>{rider.name}</h1>
         </Link>
-        <Link to={`/team/${rider.team}`}>
-          <p>{rider.team}</p>
-        </Link>
+        <p>{rider.team}</p>
       </div>
       <div className="riderPhoto">
         <img
