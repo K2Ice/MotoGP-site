@@ -20,15 +20,29 @@ class App extends React.Component {
     mainStyle: false,
     ridersMounted: true,
     animationDone: false,
+    headerScrolled: true,
   }
-  componentDidMount() {
-    const header = $(".headPic")
-    const nav = $(".mainNav")
-    let headerScrolled = true
 
-    $(document).on("scroll", function () {
-      const skroll = $(document).scrollTop()
-      if (skroll >= header.height() && headerScrolled) {
+
+
+  handleNavBehaviour = (navState = false)=> {
+    if(navState) $(document).on("scroll", this.handleNavScrollChange);
+    else $(document).off("scroll", this.handleNavScrollChange)
+      
+      $(".mainNav a").on("click", () => {
+        if ($("main").offset().top + 50 < $(document).scrollTop()) {
+          $(document).scrollTop(0)
+        }
+      })
+    
+  }
+
+  handleNavScrollChange = () => {
+    const header = $(".headPic")
+      const nav = $(".mainNav")
+    
+      const skroll = $(document).scrollTop();
+      if (skroll >= header.height() && this.state.headerScrolled) {
         nav.css({
           position: "fixed",
           top: 0,
@@ -42,8 +56,10 @@ class App extends React.Component {
 
         $(".mainNav a").css({ padding: "10px 20px" })
 
-        headerScrolled = !headerScrolled
-      } else if (skroll <= header.height() && !headerScrolled) {
+        this.setState(prev=>({
+          headerScrolled: !prev.headerScrolled,
+        }))
+      } else if (skroll <= header.height() && !this.state.headerScrolled) {
         nav.css({
           position: "static",
           top: "auto",
@@ -61,15 +77,13 @@ class App extends React.Component {
             padding: "10",
           })
         }
-        headerScrolled = !headerScrolled
+        this.setState(prev=>({
+          headerScrolled: !prev.headerScrolled,
+        }))
       }
-    })
-    $(".mainNav a").on("click", () => {
-      if ($("main").offset().top + 50 < $(document).scrollTop()) {
-        $(document).scrollTop(0)
-      }
-    })
   }
+
+  
 
   handleTeamChoice = (e) => {
     const team = e.target.value
@@ -77,18 +91,19 @@ class App extends React.Component {
       chosenTeam: team,
     })
   }
-  handleRidersState = (state) => {
-    if (!state) {
+  handleRidersState = (componentstate) => {
+    if (!componentstate) {
       this.setState({
         chosenTeam: "all",
-        ridersMounted: state,
+        ridersMounted: componentstate,
       })
     } else {
       this.setState({
-        ridersMounted: state,
+        ridersMounted: componentstate,
       })
     }
   }
+  
 
   handleAnimations = () => {
     this.setState({ animationDone: true })
@@ -110,6 +125,7 @@ class App extends React.Component {
                     {...props}
                     changeAnimateState={this.handleAnimations}
                     animatedElements={this.state.animationDone}
+                    handleNavBehaviour={this.handleNavBehaviour}
                   />
                 )}
               />

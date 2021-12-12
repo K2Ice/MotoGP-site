@@ -4,12 +4,19 @@ import "../styles/WelcomePage.css"
 
 import icon from "../pic/motorcycle_icon.png"
 
-const WelcomePage = ({ animatedElements, changeAnimateState }) => {
+const WelcomePage = ({ animatedElements, changeAnimateState, handleNavBehaviour }) => {
+ 
+ 
   useEffect(() => {
-    setTimeout(() => {
-      changeAnimateState()
-    }, 5000)
+    setTimeout(() => {changeAnimateState()}, 5000)
   }, [changeAnimateState])
+
+  useEffect(() => {
+    handleNavBehaviour(false)
+    return ()=>handleNavBehaviour(true)
+  },[handleNavBehaviour])
+
+
   return (
     <>
       <img
